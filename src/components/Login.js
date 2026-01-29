@@ -27,7 +27,8 @@ function Login(props) {
     e.preventDefault(); //새로고침 방지
 
     //백엔드 서버에 url주소 form데이터를 넘긴다.
-    axios.post('/ginipet_login', form)
+    //axios.post('http://localhost:9070/login', form)
+    axios.post('https://port-0-backend-express-server-mkvweaew5df78f72.sel3.cloudtype.app', form)
       .then(res=>{ //성공시 작업
         //JWT 토근 저장
         localStorage.setItem('token', res.data.token);
@@ -109,4 +110,5 @@ function Login(props) {
 
 
 export default Login;
+
 
