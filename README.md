@@ -12,4 +12,28 @@ Node.js + React + MySQL 기반 JWT 인증 시스템 구현
  - Axios
  - CSS
  - React Router
-   
+
+💻 Backend
+ - Node.js
+ - Express
+ - MySQL
+ - JWT
+ - bcrypt
+
+☁ 배포 환경(Cloud Type)
+ - URL주소 : https://web-ginipet-m-mkvweaew5df78f72.sel3.cloudtype.app/
+
+✨ 주요 기능
+🔐 인증 기능
+ - 회원가입 (bcrypt 암호화)
+ - 로그인 시 JWT 발급
+ - 쿠키 저장
+ - 인증 미들웨어 적용
+
+🔐 인증 흐름
+- 로그인 요청
+- 서버에서 bcrypt 비교
+- JWT 발급
+- 쿠키에 저장
+- 인증 미들웨어에서 토큰 검증
+- 보호된 API 접근 허용
